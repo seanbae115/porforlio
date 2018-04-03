@@ -70,72 +70,43 @@ $(document).ready(function() {
     $(this).removeClass("floating-label-form-group-with-focus");
   });
 
-  // Owl Carousel Settings
-  $(".team-carousel").owlCarousel({
-    items: 3,
-    navigation: true,
-    pagination: false,
-    navigationText: [
-      "<i class='fa fa-angle-left'></i>",
-      "<i class='fa fa-angle-right'></i>"
-    ],
-  });
-
-  $(".portfolio-carousel").owlCarousel({
-    singleItem: true,
-    navigation: true,
-    pagination: false,
-    navigationText: [
-      "<i class='fa fa-angle-left'></i>",
-      "<i class='fa fa-angle-right'></i>"
-    ],
-    autoHeight: true,
-    mouseDrag: false,
-    touchDrag: false,
-    transitionStyle: "fadeUp"
-  });
-
-  $(".testimonials-carousel, .mockup-carousel").owlCarousel({
-    singleItem: true,
-    navigation: true,
-    pagination: true,
-    autoHeight: true,
-    navigationText: [
-      "<i class='fa fa-angle-left'></i>",
-      "<i class='fa fa-angle-right'></i>"
-    ],
-    transitionStyle: "backSlide"
-  });
-
-  $(".portfolio-gallery").owlCarousel({
-    items: 3,
-  });
-
-  // Magnific Popup jQuery Lightbox Gallery Settings
-  $('.gallery-link').magnificPopup({
-    type: 'image',
-    gallery: {
-      enabled: true
+  //Modal information object
+  var portfolioInfo = {
+    ArtisanDate: {
+      title: 'ArtisanDate',
+      image: 'img/creative/portfolio/grid/artisandate.png',
+      // description: `<p>Live Face Off allows friends and family to connect with one another via webcam and chat to enjoy some time together. The application features two modes of gameplay, with more to come in the future. The mission behind Live Face Off is to give just about anyone the ability to easily login and rekindle old bonds or make new ones. We wanted there to be more than one way of logging in, that way even your grandparents can join in on the fun. Our focus is to take this application to the next level by continuously creating new content for users to try out, and also give more incentives by implementing achievements and an online matchmaking system.</p><p>My contribution to Live Face Off was developing the backend using Node.js and constructing the database using MongoDB. I also helped out with routing some of the React components, and by creating the About page.</p>`,
+      links: ["www.artisandate.com", "https://github.com/seanbae115/c12.17_datenight"]
     },
-    image: {
-      titleSrc: 'title'
+    SpotiConcert: {
+      title: 'SpotiConcert',
+      image: 'img/creative/portfolio/grid/spoticoncert.png',
+      // description: `<p>Student Grade Table is a Content Management System for student courses and grades. It allows users to Create, Read, and Delete from the MySQL database through a PHP backend.</p>`,
+      links: ["spoticoncert.bae-sw.us", "https://github.com/seanbae115/c12.17Hackathon2"]
+    },
+    MemoryMatchGame: {
+      title: 'MemoryMatchGame',
+      image: 'img/creative/portfolio/grid/Memory.png',
+      // description: `<p>Beets & Eats is an on the go event planner that combines restaurants, breweries, and local events for an easy night out. To use: simply input your location or use the geolocation button, choose an event you wish to go to, and then use the map to select a place to grab some food and drinks at.</p><p>My role during this 48-hour hackathon was to gather all the information used to populate the restaurants and breweries from yelp and format it in a way that could be used throughout the entire application. I also helped create the landing page, and put together a few pieces for the google map.`,
+      links: ["memorymatch.bae-sw.us", "https://github.com/seanbae115/memory_match"]
     }
-  });
+  }
 
-  // Magnific Popup Settings
-  $('.mix').magnificPopup({
-    type: 'image',
-    image: {
-      titleSrc: 'title'
-    }
-  });
-
-  // Vide - Video Background Settings
-  $('header.video').vide({
-    mp4: "mp4/camera.mp4",
-    poster: "img/agency/backgrounds/bg-mobile-fallback.jpg"
-  }, {
-    posterType: 'jpg'
-  });
+  function presentModalInformation() {
+    var projectInfo = $(this).closest('.portfolio-div').attr('data-title');
+    var projectTitle = portfolioInfo[projectInfo].title;
+    var projectDescription = portfolioInfo[projectInfo].description;
+    var projectImage = portfolioInfo[projectInfo].image;
+    var liveLink = portfolioInfo[projectInfo].links[0];
+    var gitHubLink = portfolioInfo[projectInfo].links[1];
+    $("#portfolioModal").find('.modal-title').text(projectTitle);
+    $("#portfolioModal").find('.modal-body .description').html(projectDescription);
+    $("#portfolioModal").find('.modal-body img').attr('src', projectImage);
+    $("#portfolioModal").find('.modal-body .live').attr('href', liveLink);
+    $("#portfolioModal").find('.modal-body .github').attr('href', gitHubLink);
+    $('#portfolioModal').modal('show');
+  }
+  //portfolio Modal Click Handler
+  $('.portfolio-wrapper').on('click', presentModalInformation);
 
 })(jQuery); // End of use strict
