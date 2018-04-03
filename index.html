@@ -27,18 +27,8 @@
     <link href="device-mockups/device-mockups.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
-    <!-- Custom styles for this theme -->
-    <!-- Uncomment the color scheme you want to use! Red is chosen by default! -->
-    <!-- <link href="css/vitality-red.css" rel="stylesheet" type="text/css"> -->
     <link href="css/vitality-aqua.css" rel="stylesheet" type="text/css">
-    <!-- <link href="css/vitality-blue.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="css/vitality-green.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="css/vitality-orange.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="css/vitality-pink.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="css/vitality-purple.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="css/vitality-tan.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="css/vitality-turquoise.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="css/vitality-yellow.css" rel="stylesheet" type="text/css"> -->
+    
 
   </head>
 
@@ -63,13 +53,13 @@
               <a class="nav-link js-scroll-trigger" href="#services">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#process">Process</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#work">Projects</a>
+              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./resume/SeanBaeResume.pdf">Resume</a>
             </li>
           </ul>
         </div>
@@ -77,14 +67,13 @@
     </nav>
 
     <!-- Masthead -->
-    <header class="masthead" style="background-image: url('img/creative/backgrounds/bg-header.jpg');">
+    <header class="masthead" style="background-image: url('img/creative/backgrounds/port.jpg');">
       <div class="container h-100">
         <div class="row h-100">
           <div class="col-12 my-auto text-center text-white">
-            <img class="masthead-img img-fluid mb-3" src="img/creative/profile.svg" alt="">
-            <div class="masthead-title">Sean Bae</div>
+            <div class="masthead-title" style="color: black;">Sean Bae</div>
             <hr class="colored">
-            <div class="masthead-subtitle">Web Developer</div>
+            <div class="masthead-subtitle" style="color: black;">Web Developer</div>
           </div>
         </div>
       </div>
@@ -190,7 +179,7 @@
     </section>
 
     <!-- Portfolio Grid Section -->
-    <section class="page-section">
+    <section class="page-section" id="projects">
       <div class="container text-center wow fadeIn">
         <h2>Projects</h2>
         <hr class="colored">
@@ -268,13 +257,6 @@
               </div>
               <div class="row control-group">
                 <div class="form-group col-12 floating-label-form-group controls">
-                  <label>Phone Number</label>
-                  <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="row control-group">
-                <div class="form-group col-12 floating-label-form-group controls">
                   <label>Message</label>
                   <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
                   <p class="help-block text-danger"></p>
@@ -284,7 +266,7 @@
               <div id="success"></div>
               <div class="row">
                 <div class="form-group col-12">
-                  <button type="submit" class="btn btn-secondary">Send</button>
+                  <button class="btn btn-secondary pull-right sendButton">Send</button>
                 </div>
               </div>
             </form>
@@ -304,12 +286,18 @@
               Call</h4>
             <p>555-213-4567</p>
           </div>
+          <div class="col-md-4 footer-contact-details ">
+            <h4>
+              <i class="fa fa-map-marker "></i>
+              Location</h4>
+            <p>Buena Park, CA</p>
+          </div>
           <div class="col-md-4 footer-contact-details">
             <h4>
               <i class="fa fa-envelope"></i>
               Email</h4>
             <p>
-              <a href="mailto:mail@example.com">mail@example.com</a>
+              <a href="mailto:seanbae115@gmail.com">seanbae115@gmail.com</a>
             </p>
           </div>
         </div>
@@ -317,17 +305,12 @@
           <div class="col-lg-12">
             <ul class="list-inline">
               <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-facebook fa-fw fa-2x"></i>
+                <a target="_blank" href="https://www.github.com/seanbae115">
+                  <i class="fa fa-github fa-fw fa-3x"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-twitter fa-fw fa-2x"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.linkedin.com/in/sean-bae-628b85127/">
                   <i class="fa fa-linkedin fa-fw fa-2x"></i>
                 </a>
               </li>

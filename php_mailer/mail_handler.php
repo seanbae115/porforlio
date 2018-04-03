@@ -1,6 +1,6 @@
 <?php
 require_once('email_config.php');
-require('phpmailer/PHPMailer/PHPMailerAutoload.php');
+require('PHPMailer/PHPMailerAutoload.php');
 
 // Validate POST inputs
 $message = [];
@@ -23,15 +23,6 @@ if(empty($message['email'])){
     $output['messages'][] = 'invalid email key';
 }
  
-//Sanitize phone
-$message['phone'] = filter_var($_POST['phone'], FILTER_VALIDATE_REGEXP, [
-    'options'=>[
-        'regexp'=>'/^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$/'
-    ]
-]);
-
-// $message['phone'] = $_POST['phone'];
-
 
 //Sanitize message field
 $message['message'] = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
@@ -81,7 +72,7 @@ $message['subject'] = "Portfolio contect from: {$message['name']}";
 $mail->Subject = $message['subject'];
 
 
-$mail->Body = "You have received a new message from your website contact form.<br>"."Here are the details:<br>Name: {$message['name']}<br>Email: {$message['email']}<br>Phone: {$message['phone']}<br>Message:<br>{$message['message']}";
+$mail->Body = "Name: {$message['name']}<br>Email: {$message['email']}<br>Message:<br>{$message['message']}";
 $mail->AltBody = htmlentities($message['message']);
 
 //Attempt email send, output result to client

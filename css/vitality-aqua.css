@@ -194,7 +194,8 @@ header.masthead {
       padding-bottom: 0; }
       header.masthead .masthead-img {
         max-width: 250px;
-        max-height: 250px; }
+        max-height: 250px;
+        color: black; }
       header.masthead .masthead-title {
         font-size: 5rem;
         line-height: 5rem; }
