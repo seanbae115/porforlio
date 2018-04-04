@@ -36,6 +36,7 @@ if($output['success'] !== null) {
     echo json_encode($output);
     exit();
 }
+
 $mail = new PHPMailer;
 $mail->SMTPDebug = 0;           // Enable verbose debug output. Change to 0 to disable debugging output.
 $mail->isSMTP();                // Set mailer to use SMTP.
