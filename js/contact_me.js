@@ -21,7 +21,6 @@ $(function() {
       $.ajax({
         url: "php_mailer/mail_handler.php",
         type: "POST",
-        dataType: 'JSON',
         data: {
           name: name,
           email: email,
