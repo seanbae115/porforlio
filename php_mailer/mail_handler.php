@@ -8,6 +8,7 @@ $output = [
     'success' => null,  
     'messages' => []
 ];
+
 //Sanitize name field
 $message['name'] = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
 if(empty($message['name'])) {
