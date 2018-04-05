@@ -75,13 +75,13 @@ $(document).ready(function() {
     ArtisanDate: {
       title: 'ArtisanDate',
       image: 'img/creative/portfolio/grid/artisandate.png',
-      // description: `<p>Live Face Off allows friends and family to connect with one another via webcam and chat to enjoy some time together. The application features two modes of gameplay, with more to come in the future. The mission behind Live Face Off is to give just about anyone the ability to easily login and rekindle old bonds or make new ones. We wanted there to be more than one way of logging in, that way even your grandparents can join in on the fun. Our focus is to take this application to the next level by continuously creating new content for users to try out, and also give more incentives by implementing achievements and an online matchmaking system.</p><p>My contribution to Live Face Off was developing the backend using Node.js and constructing the database using MongoDB. I also helped out with routing some of the React components, and by creating the About page.</p>`,
+      description: `<p>Application designed to provide live and useful date itinerary. Used ReactJS/Redux for creation of all clients facing pages and routing. Node.js, Express, MySQL stack on AWS Ubuntu server. </p>`,
       links: ["http://artisandate.com", "https://github.com/seanbae115/c12.17_datenight"]
     },
     SpotiConcert: {
       title: 'SpotiConcert',
       image: 'img/creative/portfolio/grid/spoticoncert.png',
-      // description: `<p>Student Grade Table is a Content Management System for student courses and grades. It allows users to Create, Read, and Delete from the MySQL database through a PHP backend.</p>`,
+      description: `<p>Developed a concert finding app upon user’s Spotify preferences in 48 hours with team. •	Utilized 3rd party API calls to get live datas (Spotify, Google Maps, TicketMaster)</p>`,
       links: ["http://spoticoncert.bae-sw.us", "https://github.com/seanbae115/c12.17Hackathon2"]
     },
     MemoryMatchGame: {
