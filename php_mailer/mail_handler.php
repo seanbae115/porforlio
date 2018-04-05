@@ -1,5 +1,5 @@
 <?php
-// require_once('email_config.php');
+require_once('email_config.php');
 require('phpmailer/PHPMailer/PHPMailerAutoload.php');
 
 //Validate POST inputs
@@ -43,8 +43,8 @@ $mail->SMTPDebug = 0;           // Enable verbose debug output. Change to 0 to d
 $mail->isSMTP();                // Set mailer to use SMTP.
 $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers.
 $mail->SMTPAuth = true;         // Enable SMTP authentication
-$mail->Username = 'jobseanbae115@gmail.com';   // SMTP username
-$mail->Password = 'Rndlsdlapdlf115';   // SMTP password
+$mail->Username = EMAIL_USER;   // SMTP username
+$mail->Password = EMAIL_PASS;   // SMTP password
 $mail->SMTPSecure = 'tls';      // Enable TLS encryption, `ssl` also accepted, but TLS is a newer more-secure encryption
 $mail->Port = 587;              // TCP port to connect to
 $options = array(
@@ -57,7 +57,7 @@ $options = array(
 $mail->smtpConnect($options);
 $mail->From = $message['email'];  // sender's email address (shows in "From" field)
 $mail->FromName = $message['name'];  // sender's name (shows in "From" field)
-$mail->addAddress('jobseanbae115@gmail.com');  // Add a recipient
+$mail->addAddress(EMAIL_USER);  // Add a recipient
 //$mail->addAddress('ellen@example.com');                        // Name is optional
 $mail->addReplyTo($message['email'], $message['name']);                          // Add a reply-to address
 //$mail->addCC('cc@example.com');
