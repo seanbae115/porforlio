@@ -22,6 +22,7 @@ if(empty($message['name'])) {
 //     $output['messages'][] = 'invalid phone key';
 // }
 //Sanitize email field
+
 $message['email'] = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
 if(empty($message['email'])) {
     $output['success'] = false;
