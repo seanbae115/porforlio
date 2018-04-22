@@ -84,11 +84,11 @@ $(document).ready(function() {
       description: `<p>Developed a concert finding app upon user’s Spotify preferences in 48 hours with team. •	Utilized 3rd party API calls to get live datas (Spotify, Google Maps, TicketMaster)</p>`,
       links: ["http://spoticoncert.bae-sw.us", "https://github.com/seanbae115/c12.17Hackathon2"]
     },
-    MemoryMatchGame: {
-      title: 'MemoryMatchGame',
-      image: 'img/creative/portfolio/grid/Memory.png',
-      // description: `<p>Beets & Eats is an on the go event planner that combines restaurants, breweries, and local events for an easy night out. To use: simply input your location or use the geolocation button, choose an event you wish to go to, and then use the map to select a place to grab some food and drinks at.</p><p>My role during this 48-hour hackathon was to gather all the information used to populate the restaurants and breweries from yelp and format it in a way that could be used throughout the entire application. I also helped create the landing page, and put together a few pieces for the google map.`,
-      links: ["http://memorymatch.bae-sw.us", "https://github.com/seanbae115/memory_match"]
+    SharePosts: {
+      title: 'SharePosts',
+      image: 'img/creative/portfolio/grid/shareposts.png',
+      description: `<p>Application desigend to share posts with other users</p><p>Built a complete MVC framework using OOP PHP. Full suer authentication and database built in using Session, MySQL.</p>`,
+      links: ["http://shareposts.bae-sw.us", "https://github.com/seanbae115/shareposts"]
     }
   }
 
