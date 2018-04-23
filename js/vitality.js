@@ -82,7 +82,7 @@ $(document).ready(function() {
       title: 'SpotiConcert',
       image: 'img/creative/portfolio/grid/spoticoncert.png',
       description: `<p>Developed a concert finding app upon user’s Spotify preferences in 48 hours with team. •	Utilized 3rd party API calls to get live datas (Spotify, Google Maps, TicketMaster)</p>`,
-      links: ["http://spoticoncert.bae-sw.us", "https://github.com/seanbae115/c12.17Hackathon2"]
+      links: ["", "https://github.com/seanbae115/c12.17Hackathon2"]
     },
     SharePosts: {
       title: 'SharePosts',
