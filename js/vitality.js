@@ -91,7 +91,7 @@ $(document).ready(function() {
       image: 'img/creative/portfolio/grid/artisandate.png',
       description: `<p>Application designed to provide live and useful date itinerary. Used ReactJS/Redux for creation of all clients facing pages and routing. Node.js, Express, MySQL stack on AWS Ubuntu server. </p>`,
       links: [
-        'http://artisandate.com',
+        'https://artisandate.com',
         'https://github.com/seanbae115/c12.17_datenight'
       ]
     },
@@ -106,7 +106,7 @@ $(document).ready(function() {
       image: 'img/creative/portfolio/grid/sharepost.png',
       description: `<p>Application desigend to share posts with other users</p><p>Built a complete MVC framework using OOP PHP. Full suer authentication and database built in using Session, MySQL.</p>`,
       links: [
-        'http://shareposts.bae-sw.us',
+        'https://shareposts.bae-sw.us',
         'https://github.com/seanbae115/shareposts'
       ]
     },
