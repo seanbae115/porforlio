@@ -106,7 +106,7 @@ $(document).ready(function() {
       image: 'img/creative/portfolio/grid/sharepost.png',
       description: `<p>Application desigend to share posts with other users</p><p>Built a complete MVC framework using OOP PHP. Full suer authentication and database built in using Session, MySQL.</p>`,
       links: [
-        'https://shareposts.bae-sw.us',
+        'http://shareposts.bae-sw.us',
         'https://github.com/seanbae115/shareposts'
       ]
     },
