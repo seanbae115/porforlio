@@ -11,7 +11,7 @@
 
 // Load WOW.js on non-touch devices
 var isPhoneDevice = 'ontouchstart' in document.documentElement;
-$(document).ready(function() {
+$(document).ready(function () {
   if (isPhoneDevice) {
     //mobile
   } else {
@@ -24,14 +24,14 @@ $(document).ready(function() {
   }
 });
 
-(function($) {
+(function ($) {
   'use strict'; // Start of use strict
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (
       location.pathname.replace(/^\//, '') ==
-        this.pathname.replace(/^\//, '') &&
+      this.pathname.replace(/^\//, '') &&
       location.hostname == this.hostname
     ) {
       var target = $(this.hash);
@@ -50,7 +50,7 @@ $(document).ready(function() {
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
+  $('.js-scroll-trigger').click(function () {
     $('.navbar-collapse').collapse('hide');
   });
 
@@ -61,7 +61,7 @@ $(document).ready(function() {
   });
 
   // Collapse the navbar when page is scrolled
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($('#mainNav').offset().top > 100) {
       $('#mainNav').addClass('navbar-shrink');
     } else {
@@ -71,16 +71,16 @@ $(document).ready(function() {
 
   // Activates floating label headings for the contact form
   $('body')
-    .on('input propertychange', '.floating-label-form-group', function(e) {
+    .on('input propertychange', '.floating-label-form-group', function (e) {
       $(this).toggleClass(
         'floating-label-form-group-with-value',
         !!$(e.target).val()
       );
     })
-    .on('focus', '.floating-label-form-group', function() {
+    .on('focus', '.floating-label-form-group', function () {
       $(this).addClass('floating-label-form-group-with-focus');
     })
-    .on('blur', '.floating-label-form-group', function() {
+    .on('blur', '.floating-label-form-group', function () {
       $(this).removeClass('floating-label-form-group-with-focus');
     });
 
@@ -115,7 +115,7 @@ $(document).ready(function() {
       image: 'img/creative/portfolio/grid/devcon.png',
       description: `<p>Application desigend to connect with other Developers</p><p>Built with React/Redux for client side and Node.JS/MongoDB for server side.</p>`,
       links: [
-        'https://shielded-mountain-83410.herokuapp.com/',
+        'https://devconnbae.herokuapp.com/',
         'https://github.com/seanbae115/devconnector'
       ]
     }
