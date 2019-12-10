@@ -92,7 +92,7 @@ $(document).ready(function () {
       description: `<p>Application designed to provide live and useful date itinerary. Used ReactJS/Redux for creation of all clients facing pages and routing. Node.js, Express, MySQL stack on AWS Ubuntu server. </p>`,
       links: [
         '',
-        'https://github.com/seanbae115/c12.17_datenight'
+        'https://github.com/seanbae115/artisandate'
       ]
     },
     SpotiConcert: {
